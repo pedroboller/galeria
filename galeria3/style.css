@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(228, 255, 110);
+    overflow: hidden;
+    margin: 10px;
+}
+.conteiner {
+    height: 97vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1%;
+}
+.conteiner div {
+    border: white solid;
+    border-width: 15px 15px 35px 15px;
+    box-shadow: rgba(50, 50, 93, 0.781) 5px 13px 27px 5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.back{
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.back:hover{
+    transform: rotate(-10deg);
+}
+.div1 { grid-area: 1 / 1 / 2 / 2;
+    background-image: url(img/img1.jpg);
+    transform: translate(58px,56px) rotate(5deg);
+}
+.div2 { 
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url(img/img21.jpg);
+    transform: translate(20px,-56px) rotate(5deg); 
+}
+.div3 { 
+    grid-area: 1 / 3 / 2 / 4; 
+    background-image: url(img/img17.jpg);
+    transform: translate(20px,56px) rotate(-5deg); 
+}
+.div4 { 
+    grid-area: 2 / 4 / 3 / 5;
+    background-image: url(img/img19.jpg);
+    transform: translate(30px,-56px) rotate(5deg); 
+}
+.div5 { 
+    grid-area: 1 / 5 / 2 / 6;
+    background-image: url(img/img13.jpg);
+    transform: translate(-10px,56px) rotate(-5deg); 
+}
